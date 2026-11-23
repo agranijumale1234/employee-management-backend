@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://your-angular-bucket.s3-website.ap-south-1.amazonaws.com")
+                .allowedOrigins("http://ems-agrani-bucket.s3-website-ap-southeast-2.amazonaws.com")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }
